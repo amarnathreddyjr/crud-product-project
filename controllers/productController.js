@@ -17,7 +17,7 @@ list: async(req,res)=>{
    res.status(200).send(response);
 
 },
-Details:async(req,res)=>{
+read:async(req,res)=>{
     let reqId=req.params.id;
     let response=await productModel.findOne({_id:reqId});
     res.status(200).send(response);
