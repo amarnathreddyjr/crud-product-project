@@ -22,7 +22,7 @@ mongoose.connect('mongodb://localhost:27017/crud-prooduct-project-db').then(resu
 // });
 app.post(`${baseUrl}/create`,productController.ceate);
 app.get(`${baseUrl}/list`,productController.list);
-app.get(`${baseUrl}/read/:id`,productController.Details);
+app.get(`${baseUrl}/read/:id`,productController.read);
 app.put(`${baseUrl}/Update/:id`,productController.Update);
 app.delete(`${baseUrl}/delete/:id`,productController.delete);
 
