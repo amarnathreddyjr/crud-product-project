@@ -9,11 +9,11 @@ mongoose.connect('mongodb://localhost:27017/crud-prooduct-project-db').then(resu
     console.log('connected database crud-prooduct-project-db successfully');
 });
 // app.post(`${baseUrl}/create`,async(req,res)=>{
-//     let bodyData=req.body;//
+//     let bodyData=req.body;
 //     console.log('the bodyData reseved for create operation',bodyData);
 //     let product=new productModel({
 //         name:bodyData.name,
-//         price:bodyData.price,//
+//         price:bodyData.price,
 //         description:bodyData.description,
 //         category:bodyData.category
 //     });
